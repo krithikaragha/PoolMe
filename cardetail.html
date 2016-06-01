@@ -1,0 +1,123 @@
+<?php
+  //Start session
+  	if(session_id() == '' || !isset($_SESSION))
+	{
+		  session_start();
+	}
+
+ ?>
+<!DOCTYPE html>
+<html>
+<!-- begin head -->
+<head>
+	<meta charset="utf-8">
+	<title> Byte Me </title>
+	<link rel="stylesheet" href="css/signin.css" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+    <style>
+        @font-face {
+        font-family: "Chalky";
+        src: url("font/Eraser.ttf");
+        src: local("☺"),
+        url("font/Eraser.ttf") format("truetype"),   
+    }
+    
+    h2{
+        font-size: 16px;
+    }
+    .container {
+        margin: 0 auto;
+        width: 250px;
+        clear: both;
+    }
+    .container input {
+        width: 100%;
+        clear: both;
+    }
+    .buttoncss{
+        background-color: #ff6600; 
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        -webkit-transition-duration: 0.4s; 
+        transition-duration: 0.4s;
+    }   
+    #errorDisplay {
+        margin: 10px 0px;
+        padding:12px;
+        color: #D8000C;
+        background-color: #FFBABA;
+    }
+    </style>
+<script src = "js/driver_input_validation.js"></script>
+</head> <!-- end head -->
+<!-- begin body -->
+<body background="images/g2.png">
+    <!-- begin div(wrapper) -->
+	<div id="wrapper"> 
+        <!-- begin header -->
+        <header>
+            <img src="images/car.png" height="120" width="120">
+            <h1>Pool Me !</h1>
+            <nav>
+                <ul>
+                    <li><a href="php/login.php"> <div id="orange1"> Sign In </div> </a></li>
+                    <li><a href="aboutus.html"> <div id="orange"> About Us</div></a></li>
+                    <li><a href="homepage.html"> <div id="orange"> Home </div></a></li>
+                </ul>
+            </nav>
+        </header> <!-- end header -->
+        <!-- begin section -->
+        <section>
+            <!-- begin div(container) -->
+            <div class = "container">
+                <form action = "php/register_vehicle.php" method = "post" onsubmit = "return driverInputValidation();">
+                    <h2> Sign-up Information </h2>
+                    <p>
+                        <label> Car Model </label>
+                        <input type = "text" name = "carbrand" id = "carbrand" />
+                        <br>
+                        <label> Car Make </label>
+                        <input type = "text" name = "carmodel" id = "carmodel" />
+                        <br>
+                        <label> Car Color </label>
+                        <input type = "text" name = "carcolor" id = "carcolor" />
+                        <br>
+                        <label> License Plate </label>
+                        <input type = "text" name = "carnum" id = "carnum"/>
+                        <br>
+                        <label> Drivers License </label>
+                        <input type="password" name="drivingnum" id = "drivingnum" value="">
+                    </p>
+                    <p class = "button"> 
+                        <input type = "submit" class = "buttoncss" value = "Submit" >
+                    </p>
+                </form>
+            </div> <!-- end div(container) -->
+            <div class = "errorDisplay">
+                <p id = "errorDisplay">
+                    <!-- Javascript form validation errors are displayed here -->
+                </p>
+            </div>
+            
+            <!-- begin marquee -->
+            <marquee class="car" direction="left" scrollamount="7" behavior="scroll">
+                <img src="images/m1.png" height="80"> Ride Now...
+            </marquee> <!-- end marquee -->
+        </section> <!-- end section -->
+        
+        <br><br><br><br><br>
+        
+        <!-- begin footer -->
+        <footer>
+            <p>Copyright © ByteMe, <small>All Rights Reserved !</small></p>
+        </footer> <!-- end footer -->
+
+    </div> <!--end wrapper-->
+</body> <!-- end body -->
+</html>

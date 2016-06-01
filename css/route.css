@@ -1,0 +1,417 @@
+body {
+font-family: 'chalky';
+background-size: cover;
+background-repeat: no repat;
+ margin: 0;
+  padding: 0;
+}
+
+#main{
+  padding-bottom: 30px;
+
+  border-top: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+
+#button{
+		background-color: #ff6600; 
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        -webkit-transition-duration: 0.4s; 
+        transition-duration: 0.4s;
+}
+
+#wrapper {
+width: 1000px;
+margin:0 auto;
+padding: 0px;
+}
+.input_wrapper{
+  max-width: 900px;
+  width: 100%;
+  margin-top: 0;
+  padding-top: 0;
+  
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+
+text-align:left;
+padding: 0px;
+bottom: 0px;
+height: 100px;
+}
+
+h1
+{
+
+color: #000;
+left:350px;
+top:45px;
+font-size: 40px;
+position: absolute;
+
+margin-bottom: 0px;
+}
+
+nav{
+height: 50px;
+}
+
+nav ul {
+
+display: inline;
+vertical-align: top;
+top:50px;
+font-family: 'lobster';
+font-size: 18px;
+text-align:center;
+text-decoration:none;
+
+}
+
+nav li{ 
+display:inline-block;
+color: #000;
+top:45px;
+margin-right:10px;
+text-align: center;
+float: right;
+/* background: #f22; */
+}
+
+#orange
+{
+width: 160px;
+height: 150px;
+background: url(../images/nav3.png);
+background-size: contain;
+background-repeat: no-repeat;
+color: #000;
+text-align: center;
+line-height:70px;
+display: inline-block;
+
+}
+
+#orange1
+{
+width: 180px;
+height: 150px;
+background: url(../images/nav2.png);
+background-size: contain;
+background-repeat: no-repeat;
+color: #fff;
+line-height:80px;
+top: 0px;
+display: inline-block;
+
+}
+
+nav #orange:hover {
+color: #fff;
+top:45px;
+display: inline-block;
+width: 180px;
+height: 150px;
+top: 0px;
+vertical-align: top;
+background: url(../images/nav5.png) no-repeat;
+background-size: contain;
+}
+
+nav #orange1:hover {
+color: #fff;
+top:45px;
+display: inline-block;
+width: 185px;
+height: 150px;
+top: 0px;
+vertical-align: top;
+background: url(../images/nav5.png) no-repeat;
+background-size: contain;
+}
+
+footer{
+   position: fixed-bottom;
+   margin-bottom: 0px;
+   text-align: center;
+   
+   height:25px;
+   width:100%;
+   color: #000;
+}
+
+section {
+height: 1240px;
+color: #fff;
+background: url(../images/ch2.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+
+
+}
+
+.aside
+{
+height: 300px;
+width: 450px;
+float: right;
+
+}
+
+
+.article
+{
+height: 300px;
+width: 500px;
+float: left;
+margin-top: 10px;
+}
+
+.car {
+font-size: 20px;
+text-align: top;
+color: #fff;
+
+
+}
+
+
+.b{
+	width: 100%;
+	padding:10px;
+	font-size: 20px;
+	text-align: center;
+}
+
+.head{
+display: inline-block;
+	padding: 10px;
+	
+	text-align: left;
+	font-size: 40px;
+	margin-top:0px;
+	margin-left: 100px;
+}
+.label{
+	text-align: left;
+	padding: 10px;
+	display: inline-block;
+	font-size: 25px;
+	margin-top: 15px;
+}
+.form{
+	display: inline;
+	width: 100%;
+	font-size: 18px;
+	color: #636269;
+
+}
+
+
+.button:hover{
+	color: #636269;
+	background-color: white;
+	box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 6px 16px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+/***************select css***************/
+.select {
+  font-size: 15px;
+  position: relative;
+  width: 60%;
+  height: 50px;
+  border: 1px solid #c4c4c4;
+  margin-top: 10px;
+}
+
+.select .arr {
+  background: #fff;
+  bottom: 5px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 50px;
+  pointer-events: none;
+}
+
+.select .arr:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  margin-top: -5px;
+  pointer-events: none;
+  border-top: 10px solid #ead61c;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+.select .arr:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 28px;
+  margin-top: -5px;
+  pointer-events: none;
+  border-top: 6px solid #fff;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+}
+
+.select select {
+  outline: none;
+  -webkit-appearance: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+
+  transition: border-color 0.2s;
+  border: 1px solid #ead61c;
+  border-radius: 0;
+  border: hidden;
+
+  background: #fff;
+  color: #474747;
+  line-height: normal;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 50px;
+  width: 100%;
+}
+
+.category{
+  color: #ead61c;
+  font-size: 25px;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+
+#step1{
+  padding-left: 7%;
+  width: 80%;
+
+}
+#step2{
+  padding-left: 10%;
+  width: 70%;
+}
+#step3{
+  padding-left: 10%;
+  width: 68%;
+}
+#step4{
+  width: 90%;
+}
+
+.steps{
+  width: 100%;
+  clear: both;
+  margin-bottom: 70px;
+}
+
+
+.step_body{
+  margin-left: 10%;
+  width: 110%;
+  height: 100%;
+  display: inline-block;
+}
+title
+
+.input_wrapper{
+  max-width: 900px;
+  width: 100%;
+  margin-top: 0;
+  padding-top: 0;
+  margin-left: auto;
+  color:black;
+  margin-right: auto;
+}
+
+.input_frame {
+  background-color: white;
+  border: 1px solid #c4c4c4;
+  width: 60%;
+  max-height: 400px;
+  padding-left: 0px;
+}
+
+.input_body {
+  background-color: white;
+  border: 1px solid #c4c4c4;
+  width: 60%;
+  height: 50px;
+}
+
+
+.input_textfield {
+  float: right;
+  padding: 0;
+  padding-left: 5%;
+  margin: 0;
+  border: none;
+  display: inline-block;
+  width: 83%;
+  height: 50px;
+  position: relative;
+  font-size: 15px;
+  color: black;
+}
+
+.input_label {
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding-bottom: 8px;
+  font-weight: bold;
+  font-style: italic;
+  color: #474747;
+}
+
+.input_submit {
+  margin: 8px;
+  border: none;
+  width: 120px;
+  height: 40px;
+  background-color: #abcdef;
+  color: black;
+  border-radius: 5%;
+}
+
+.input_checkbox{
+  padding: 5px;
+  color:black;
+  width: 12%;
+  margin: 10px;
+  
+}
+#stops
+{
+	color:black;
+}
+
+#publish_title{
+  width: 100%;
+  text-align: center;
+  font-size: 35px;
+  font-weight: normal;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #595959;
+
+}

@@ -1,0 +1,145 @@
+body {
+font-family: 'chalky';
+background-size: cover;
+background-repeat: no repat;
+
+}
+
+#wrapper {
+width: 900px;
+margin:0 auto;
+padding: 0px;
+}
+
+header {
+text-align:left;
+}
+
+h1
+{
+color: #fff;
+left:395px;
+top:45px;
+font-size: 40px;
+position: absolute;
+vertical-align: top;
+}
+
+nav ul {
+display: inline;
+vertical-align: top;
+top:45px;
+font-family: 'lobster';
+font-size: 18px;
+text-align:center;
+text-decoration:none;
+
+}
+
+nav li{ 
+display:inline-block;
+color: #000;
+top:45px;
+margin-right:10px;
+text-align: center;
+float: right;
+/* background: #f22; */
+}
+
+#orange
+{
+width: 160px;
+height: 150px;
+background: url(../images/nav3.png);
+background-size: contain;
+background-repeat: no-repeat;
+color: #000;
+text-align: center;
+line-height:70px;
+display: inline-block;
+
+}
+
+#orange1
+{
+width: 180px;
+height: 150px;
+background: url(../images/nav2.png);
+background-size: contain;
+background-repeat: no-repeat;
+color: #fff;
+line-height:80px;
+top: 0px;
+display: inline-block;
+
+}
+
+nav #orange:hover {
+color: #fff;
+top:45px;
+display: inline-block;
+width: 185px;
+height: 150px;
+top: 0px;
+vertical-align: top;
+background: url(../images/nav5.png) no-repeat;
+background-size: contain;
+}
+
+nav #orange1:hover {
+color: #fff;
+top:45px;
+display: inline-block;
+width: 185px;
+height: 150px;
+top: 0px;
+vertical-align: top;
+background: url(../images/nav5.png) no-repeat;
+background-size: contain;
+}
+
+
+footer{
+   position: fixed-bottom;
+   margin-bottom: 0px;
+   text-align: center;
+   
+   height:25px;
+   width:100%;
+   color: white;
+}
+
+section {
+background: url(../images/n2.png);
+height: 600px;
+
+}
+
+section p {
+font-size: 30px;
+text-align: center;
+margin-left: 130px;
+margin-top: 20px;
+display: inline-block;
+}
+
+h5
+{
+font-size: 70px;
+text-align: center;
+margin-left: 200px;
+margin-top: 0px;
+display: inline-block;
+}
+section h5 span
+{
+color: #2e8b57;
+}
+
+.car {
+font-size: 60px;
+text-align: top;
+color: #000;
+line-height:100px;
+
+}
